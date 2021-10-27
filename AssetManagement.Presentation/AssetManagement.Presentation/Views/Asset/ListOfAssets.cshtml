@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "ListOfAssets";
+}
+
+@model IEnumerable<Asset>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card-deck">
+                <div class="card col-md-12 my-5 py-3">
+                    <div class="card-block">
+                        <h4 class="card-title">Analytical Dashboard</h4>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <p class="card-text">
+                                    <br />Type of GUI which often provides
+                                    at-a-glance views of key performance indicators relevant to a particular objective or business process.
+                                </p>
+                            </div>
+                            <div class="col-sm-4">
+                                <nav aria-label="breadcrumb w-25">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Asset Dashboard</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card ctm-border-radius shadow-sm grow mx-auto table-striped">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col col-sm-3 text-left">
+                            <form asp-action="ListOfAssets" asp-controller="Asset" method="get">
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="text" name="AssetName">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="employee-office-table">
+                        <div class="table-responsive table-borderless">
+                            <table class="table custom-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th>AssetName</th>
+                                        <th>Type</th>
+                                        <th>Model No</th>
+                                        <th>Serial No</th>
+                                        <th>Quantity</th>
+                                        <th>Size</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.ToList())
+                                    {
+                                        <tr>
+                                            <td>@item.Assetname</td>
+                                            <td>@item.BrandId</td>
+                                            <td>@item.Modelno</td>
+                                            <td>@item.Serialno</td>
+                                            <td>@item.Quantity</td>
+                                            <td>@item.Size</td>
+                                            <td>
+                                                <a asp-controller="Asset" asp-action="ViewDetails" asp-route-id="@item.Id" class="btn btn-info ml-3">Details</a>
+                                                <a asp-controller="Asset" asp-action="AssignTo" asp-route-id="@item.Id" class="btn btn-warning ml-3">Assign To</a>
+                                            </td>
+
+                                        </tr>
+
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

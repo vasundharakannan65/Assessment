@@ -1,0 +1,15 @@
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\bin\Debug\net5.0\AssetManagement.BL.deps.json
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\bin\Debug\net5.0\AssetManagement.BL.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\bin\Debug\net5.0\ref\AssetManagement.BL.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\bin\Debug\net5.0\AssetManagement.BL.pdb
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.csproj.AssemblyReference.cache
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.AssemblyInfoInputs.cache
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.AssemblyInfo.cs
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.csproj.CoreCompileInputs.cache
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\ref\AssetManagement.BL.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.pdb
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\bin\Debug\net5.0\AssetManagement.DA.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\bin\Debug\net5.0\AssetManagement.DA.pdb
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.BL\obj\Debug\net5.0\AssetManagement.BL.csproj.CopyComplete

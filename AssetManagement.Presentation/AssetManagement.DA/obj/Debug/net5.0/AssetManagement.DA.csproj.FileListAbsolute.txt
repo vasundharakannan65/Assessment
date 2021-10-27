@@ -1,0 +1,15 @@
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\bin\Debug\net5.0\AssetManagement.DA.deps.json
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\bin\Debug\net5.0\AssetManagement.DA.runtimeconfig.json
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\bin\Debug\net5.0\AssetManagement.DA.runtimeconfig.dev.json
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\bin\Debug\net5.0\AssetManagement.DA.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\bin\Debug\net5.0\ref\AssetManagement.DA.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\bin\Debug\net5.0\AssetManagement.DA.pdb
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.csproj.AssemblyReference.cache
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.AssemblyInfoInputs.cache
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.AssemblyInfo.cs
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.csproj.CoreCompileInputs.cache
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\ref\AssetManagement.DA.dll
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.pdb
+C:\Users\vasundharask\source\repos\AssetManagement.Presentation\AssetManagement.DA\obj\Debug\net5.0\AssetManagement.DA.genruntimeconfig.cache

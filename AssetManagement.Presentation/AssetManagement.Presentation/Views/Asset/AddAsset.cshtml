@@ -1,0 +1,121 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "AddAsset";
+}
+
+@model AssetManagement.BL.ViewModels.AssetViewModel
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card my-3 p-2">
+                <div class="card-header">
+                    <h3 class="mb-0">Add New Asset</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="AddAsset" method="post">
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label form-control-label" asp-for="BrandId">Brand Name</label>
+                                <select asp-for="BrandId" asp-items="@ViewBag.brands" class="form-control">
+                                    <option selected="">--Select--</option>
+                                </select>
+                                <span asp-validation-for="BrandId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label form-control-label" asp-for="Assetname">Asset Name</label>
+                                <input type="text" class="form-control" asp-for="Assetname" placeholder="Asset Name">
+                                <span asp-validation-for="Assetname" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label form-control-label" asp-for="Modelno">Model No.</label>
+                                <input type="text" class="form-control" asp-for="Modelno" placeholder="Model No.">
+                                <span asp-validation-for="Modelno" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label form-control-label" asp-for="Serialno">Serial No.</label>
+                                <input type="text" class="form-control" asp-for="Serialno" placeholder="Serial No.">
+                                <span asp-validation-for="Serialno" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label class="col-form-label form-control-label" asp-for="Quantity">Quantity</label>
+                                <input type="number" class="form-control" asp-for="Quantity" min="1" placeholder="Quantity">
+                                <span asp-validation-for="Quantity" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="col-form-label form-control-label" asp-for="Color">Color</label>
+                                <input type="text" class="form-control" asp-for="Color" placeholder="Color">
+                                <span asp-validation-for="Color" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="col-form-label form-control-label" asp-for="Size">Size</label>
+                                <select asp-for="Size" class="form-control" required>
+                                    <option value="L">L</option>
+                                    <option value="M">M</option>
+                                    <option value="H">H</option>
+                                </select>
+                                <span asp-validation-for="Size" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label form-control-label" asp-for="Type">Type</label>
+                                <input type="text" class="form-control form-control" asp-for="Type" placeholder="Type">
+                                <span asp-validation-for="Type" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="col-form-label form-control-label" asp-for="Price">Price</label>
+                                <input type="number" min="0" class="form-control form-control" asp-for="Price" placeholder="Price">
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form row">
+                            <div class="form-group">
+                                <label asp-for="Imagepath">Upload Image</label>
+                                <input type="file" class="form-control-file form-control" asp-for="Imagepath">
+                                <span asp-validation-for="Imagepath" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input class="btn btn-secondary" type="reset" value="Cancel">
+                                <input class="btn btn-primary" type="submit" value="Save Changes">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
+@if (ViewBag.Msg != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Msg");
+        };
+    </script>
+}
